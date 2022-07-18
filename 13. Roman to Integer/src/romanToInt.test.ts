@@ -20,3 +20,15 @@ test('LVIII => 58', () => {
 test('MCMXCIV => 1994', () => {
   expect( romanToInt('MCMXCIV') ).toBe(1994);
 });
+
+test('MMCDXXII => 2422', () => {
+  expect( romanToInt('MMCDXXII') ).toBe(2422);
+});
+
+test('MMMCMXCIX => 3999', () => {
+  expect( romanToInt('MMMCMXCIX') ).toBe(3999);
+});
+
+test('I => 1', () => {
+  expect( romanToInt('I') ).toBe(1);
+});
