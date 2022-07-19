@@ -18,18 +18,16 @@ function isPalindrome(head: ListNode | null): boolean {
   let stack: number[] = [head.val];
 
   while (cur !== null)  {
-    if ( cur.val === stack[stack.length - 1] ) {
-      stack.pop();
-    } else if ( cur.val === stack[stack.length - 2] ) {
-      stack.pop();
-      stack.pop();
-    } else {
-      stack.push(cur.val)
-    }
+    stack.push(cur.val)
     cur = cur.next;
   }
 
-  return ( stack.length === 0 ) ? true : false;
+  while ( stack.length > 1 ) {
+    if ( stack.pop() !== stack.shift() )
+      return false;
+  }
+
+  return ( stack.length < 2 ) ? true : false;
 }
 
 export { isPalindrome, ListNode };
