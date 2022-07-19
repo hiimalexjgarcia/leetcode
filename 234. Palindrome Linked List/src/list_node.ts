@@ -8,7 +8,19 @@ class ListNode {
 }
 
 function isPalindrome(head: ListNode | null): boolean {
-  return true;
+  let cur: ListNode | null = head;
+  let stack: number[] = [];
+
+  while (cur !== null)  {
+    if ( cur.val === stack[ stack.length - 1 ] ) {
+      stack.pop();
+    } else {
+      stack.push(cur.val)
+    }
+    cur = cur.next;
+  }
+
+  return ( stack.length === 0 ) ? true : false;
 }
 
 export { isPalindrome, ListNode };
