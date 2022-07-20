@@ -27,7 +27,7 @@ function isPalindrome(head: ListNode | null): boolean {
       return false;
   }
 
-  return ( stack.length < 2 ) ? true : false;
+  return true;
 }
 
 export { isPalindrome, ListNode };
