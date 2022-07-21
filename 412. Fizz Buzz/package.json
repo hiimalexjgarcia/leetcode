@@ -1,0 +1,15 @@
+{
+  "name": "412.-fizz-buzz",
+  "version": "0.0.1",
+  "description": "Solution for LeetCode problem 412",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^28.1.6",
+    "ts-jest": "^28.0.7"
+  }
+}
