@@ -1,0 +1,17 @@
+{
+  "name": "1.-two-sum",
+  "version": "0.0.1",
+  "description": "Solution for LeetCode problem 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^28.1.6",
+    "jest": "^28.1.3",
+    "ts-jest": "^28.0.7",
+    "typescript": "^4.7.4"
+  }
+}
