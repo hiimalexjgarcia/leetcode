@@ -1,0 +1,15 @@
+{
+  "name": "1672.-richest-customer-wealth",
+  "version": "0.0.1",
+  "description": "Solution for LeetCode problem 1672",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^28.1.6",
+    "ts-jest": "^28.0.7"
+  }
+}
