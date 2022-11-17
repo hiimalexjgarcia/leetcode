@@ -14,3 +14,8 @@ test('n = 2, pick = 1 => 1', () => {
     var guessNumber = guessNumberGenerator( 1 );
     expect( guessNumber( 2 ) ).toEqual( 1 );
 });
+
+test('n = 2, pick = 2 => 2', () => {
+    var guessNumber = guessNumberGenerator( 2 );
+    expect( guessNumber( 2 ) ).toEqual( 2 );
+});

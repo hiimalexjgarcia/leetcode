@@ -19,11 +19,16 @@ function guessNumberGenerator(pick: number): Function {
 	    return 0
 	}
 
-	let i
-	while ( i = guess(n) )
-	    n = n + i
+	let r, l = 1, h = n, p = l + Math.floor( ( h - l ) / 2 )
+	while ( r = guess(p) ) {
+	    if ( r === 1 )
+		l = p + 1
+	    else
+		h = p - 1
+	    p = l + Math.floor( ( h - l ) / 2 )
+	}
 
-	return n
+	return p
     }
 }
 
